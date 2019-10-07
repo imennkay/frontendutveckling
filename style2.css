@@ -1,0 +1,45 @@
+#parent {
+    border: 2px solid black;
+    height: 900px;
+    width: 850px;
+    position: relative;
+}
+body{
+    height: 100%;
+
+}
+div{
+    border: 2px solid seagreen;
+    height: 200px;
+    width: 100px;
+    margin: 2px;
+}
+
+#id-1 {
+    background: slateblue;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+#id-2 {
+    background:springgreen;
+    position: absolute;
+    right: 35%;
+    top: 25%;
+    z-index:1;
+}
+
+#id-3 {
+    background:hotpink;
+    position: absolute;
+    right: 35%;
+    bottom: 25%;
+}
+
+#id-4 {
+    background: sienna;
+    position: absolute;
+    left: 35%;
+    bottom: 25%;
+}

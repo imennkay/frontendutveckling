@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1opx;
+    
+}
+#item-3{
+    margin: 2rem;
+    width: 20px;
+    float: left;
+}
+#item-4{
+    clear: left;
+}
+
+button::after{
+
+content: "\f3ff";
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+
+}
+
+#item-4::first-line{
+    font-size: 200%;
+    text-transform: uppercase;
+    color: blueviolet;
+    font-style: italic;
+}
+
+.item {
+    border: 2px solid gray;
+}
+
+.color{
+    color: black;
+}
+
+header{
+    height: 30rem;
+    width: 100%;
+    background: url("bilder/largee.jpg");
+    background-size: cover;
+    
+    /* background-size: cover;
+    background-position: top; */
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+#btn {
+    background: purple;
+    border-radius: 10rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: all 1s ease;
+
+}
+
+.heading {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+
+}
+
+
+@keyframes skala {
+    0%{
+       transform: scale(2)
+    }
+    40%{
+        transform: rotate(200deg)
+    }
+    60%{
+        opacity: .2;
+    }
+    100%{
+         transform: scale(1.2)
+    }
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    
+
+}
+
+.btn:hover {
+    animation: skala 2s ease infinite;
+}
